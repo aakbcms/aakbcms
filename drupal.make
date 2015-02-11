@@ -29,29 +29,41 @@ projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "git@github.com:ding2/alma.git"
 projects[alma][download][branch] = "master"
+; WAYF support.
 projects[alma][patch][] = 'https://github.com/ding2/alma/pull/12.diff'
 
 projects[ddbasic][type] = "theme"
 projects[ddbasic][download][type] = "git"
 projects[ddbasic][download][url] = "git@github.com:ding2/ddbasic.git"
 projects[ddbasic][download][branch] = "master"
+; WAYF support.
 projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/1.diff'
+; Place2book fix.
 projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/2.diff'
 
 projects[ding_frontend][type] = "theme"
 projects[ding_frontend][download][type] = "git"
-projects[ding_frontend][download][url] = "git@github.com:ding2/ddbasic.git"
+projects[ding_frontend][download][url] = "git@github.com:ding2/ding_frontend.git"
 projects[ding_frontend][download][branch] = "master"
-projects[ding_frontend][patch][] = 'https://github.com/ding2/ding_frontend/pull/14.diff'
-
-; Migration support
-projects[migrate_ding1_ding2][type] = "module"
-projects[migrate_ding1_ding2][download][type] = "git"
-projects[migrate_ding1_ding2][download][url] = "git@github.com:aakbcms/migrate_ding1_ding2.git"
-projects[migrate_ding1_ding2][download][revision] = "f8c33d79335cbe40782b9c058c6b1d86de1333d8"
+; WAYF support.
+projects[ding_frontend][patch][] = 'https://github.com/ding2/ding_frontend/pull/14.patch'
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
 projects[ting_ezproxy][download][type] = "git"
 projects[ting_ezproxy][download][url] = "git@github.com:aakbcms/ting_ezproxy.git"
 projects[ting_ezproxy][download][revision] = "fb7ab9ba7bb627cfbcc8a3de300063a3fd970e8f"
+
+; Events
+projects[ding_event][type] = "module"
+projects[ding_event][download][type] = "git"
+projects[ding_event][download][url] = "git@github.com:ding2/ding_event.git"
+projects[ding_event][download][branch] = "master"
+; Patch with promote to front page.
+projects[ding_event][patch][] = 'https://github.com/ding2/ding_event/pull/12.diff'
+
+; Migration support
+projects[migrate_ding1_ding2][type] = "module"
+projects[migrate_ding1_ding2][download][type] = "git"
+projects[migrate_ding1_ding2][download][url] = "git@github.com:aakbcms/migrate_ding1_ding2.git"
+projects[migrate_ding1_ding2][download][revision] = "f8c33d79335cbe40782b9c058c6b1d86de1333d8"
