@@ -18,6 +18,8 @@ projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
 projects[ding2][download][branch] = "master"
+; Added redirect.
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/pull/13.diff'
 
 ; WAYF extesions.
 projects[ding_wayf_dk][type] = "module"
@@ -41,12 +43,28 @@ projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/1.diff'
 ; Place2book fix.
 projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/2.diff'
 
-projects[ding_frontend][type] = "theme"
+projects[ding_frontend][type] = "module"
 projects[ding_frontend][download][type] = "git"
 projects[ding_frontend][download][url] = "git@github.com:ding2/ding_frontend.git"
 projects[ding_frontend][download][branch] = "master"
 ; WAYF support.
 projects[ding_frontend][patch][] = 'https://github.com/ding2/ding_frontend/pull/14.patch'
+
+; Ding base
+projects[ding_base][type] = "module"
+projects[ding_base][download][type] = "git"
+projects[ding_base][download][url] = "git@github.com:ding2/ding_base.git"
+projects[ding_base][download][branch] = "master"
+; Added global redirect.
+projects[ding_base][patch][] = 'https://github.com/ding2/ding_base/pull/8.diff'
+
+; Permissions
+projects[ding_permissions][type] = "module"
+projects[ding_permissions][download][type] = "git"
+projects[ding_permissions][download][url] = "git@github.com:ding2/ding_permissions.git"
+projects[ding_permissions][download][branch] = "master"
+; Added redirect.
+projects[ding_permissions][patch][] = 'https://github.com/ding2/ding_permissions/pull/1.diff'
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
