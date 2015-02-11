@@ -38,6 +38,12 @@ projects[ddbasic][download][branch] = "master"
 projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/1.diff'
 projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/2.diff'
 
+projects[ding_frontend][type] = "theme"
+projects[ding_frontend][download][type] = "git"
+projects[ding_frontend][download][url] = "git@github.com:ding2/ddbasic.git"
+projects[ding_frontend][download][branch] = "master"
+projects[ding_frontend][patch][] = 'https://github.com/ding2/ding_frontend/pull/14.diff'
+
 ; Migration support
 projects[migrate_ding1_ding2][type] = "module"
 projects[migrate_ding1_ding2][download][type] = "git"
