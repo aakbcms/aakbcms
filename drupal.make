@@ -42,7 +42,7 @@ projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/2.diff'
 projects[migrate_ding1_ding2][type] = "module"
 projects[migrate_ding1_ding2][download][type] = "git"
 projects[migrate_ding1_ding2][download][url] = "git@github.com:aakbcms/migrate_ding1_ding2.git"
-projects[migrate_ding1_ding2][download][revision] = "0a7ba24064ef3564d3e643047eb8d8502610cf44"
+projects[migrate_ding1_ding2][download][revision] = "f8c33d79335cbe40782b9c058c6b1d86de1333d8"
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
