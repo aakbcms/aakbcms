@@ -35,7 +35,8 @@ projects[ddbasic][type] = "theme"
 projects[ddbasic][download][type] = "git"
 projects[ddbasic][download][url] = "git@github.com:ding2/ddbasic.git"
 projects[ddbasic][download][branch] = "master"
-projects[ddbasic][patch][] 'https://github.com/ding2/ddbasic/pull/1'
+projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/1.diff'
+projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/2.diff'
 
 ; Migration support
 projects[migrate_ding1_ding2][type] = "module"
