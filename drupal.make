@@ -90,6 +90,23 @@ projects[ding_staff][download][branch] = "master"
 ; Fixed security.
 projects[ding_staff][patch][] = 'https://github.com/aakbcms/ding_staff/commit/3c1c8f0f8c75dd2f0919977cfeb9951d88cab3ac.diff'
 
+; Ting
+projects[ting][type] = "module"
+projects[ting][download][type] = "git"
+projects[ting][download][url] = "git@github.com:ding2/ting.git"
+projects[ting][download][branch] = "master"
+; PDOException.
+projects[ting][patch][] = 'https://github.com/ding2/ting/pull/13.diff'
+
+; Bookmarks
+projects[ding_bookmark][type] = "module"
+projects[ding_bookmark][download][type] = "git"
+projects[ding_bookmark][download][url] = "git@github.com:ding2/ding_bookmark.git"
+projects[ding_bookmark][download][branch] = "master"
+; Permissions issues.
+projects[ding_bookmark][patch][] = 'https://github.com/ding2/ding_bookmark/pull/7.diff'
+
+
 ; Migration support
 projects[migrate_ding1_ding2][type] = "module"
 projects[migrate_ding1_ding2][download][type] = "git"
