@@ -65,6 +65,8 @@ projects[ding_permissions][download][url] = "git@github.com:ding2/ding_permissio
 projects[ding_permissions][download][branch] = "master"
 ; Added redirect.
 projects[ding_permissions][patch][] = 'https://github.com/ding2/ding_permissions/pull/1.diff'
+; Staff.
+projects[ding_permissions][patch][] = 'https://github.com/aakbcms/ding_permissions/commit/49a37a5ed0877c6fa63504913220c12c7a3f58ba.diff'
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
@@ -79,6 +81,14 @@ projects[ding_event][download][url] = "git@github.com:ding2/ding_event.git"
 projects[ding_event][download][branch] = "master"
 ; Patch with promote to front page.
 projects[ding_event][patch][] = 'https://github.com/ding2/ding_event/pull/12.diff'
+
+; Staff
+projects[ding_staff][type] = "module"
+projects[ding_staff][download][type] = "git"
+projects[ding_staff][download][url] = "git@github.com:ding2/ding_staff.git"
+projects[ding_staff][download][branch] = "master"
+; Fixed security.
+projects[ding_staff][patch][] = 'https://github.com/aakbcms/ding_staff/commit/3c1c8f0f8c75dd2f0919977cfeb9951d88cab3ac.diff'
 
 ; Migration support
 projects[migrate_ding1_ding2][type] = "module"
