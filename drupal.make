@@ -43,6 +43,14 @@ projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/1.diff'
 ; Place2book fix.
 projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/2.diff'
 
+; Place 2 book
+projects[ding_place2book][type] = "theme"
+projects[ding_place2book][download][type] = "git"
+projects[ding_place2book][download][url] = "git@github.com:ding2/ding_place2book.git"
+projects[ding_place2book][download][branch] = "master"
+; Place2book fix.
+projects[ding_place2book][patch][] = 'https://github.com/ding2/ding_place2book/pull/2.diff'
+
 projects[ding_frontend][type] = "module"
 projects[ding_frontend][download][type] = "git"
 projects[ding_frontend][download][url] = "git@github.com:ding2/ding_frontend.git"
