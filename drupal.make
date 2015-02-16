@@ -65,8 +65,6 @@ projects[ding_base][download][url] = "git@github.com:ding2/ding_base.git"
 projects[ding_base][download][branch] = "master"
 ; Added global redirect.
 projects[ding_base][patch][] = 'https://github.com/ding2/ding_base/pull/8.diff'
-; Fix cgen.
-projects[ding_base][patch][] = 'https://github.com/ding2/ding_base/pull/9.diff'
 
 ; Permissions
 projects[ding_permissions][type] = "module"
@@ -113,9 +111,6 @@ projects[ding_bookmark][type] = "module"
 projects[ding_bookmark][download][type] = "git"
 projects[ding_bookmark][download][url] = "git@github.com:ding2/ding_bookmark.git"
 projects[ding_bookmark][download][branch] = "master"
-; Permissions issues.
-projects[ding_bookmark][patch][] = 'https://github.com/ding2/ding_bookmark/pull/7.diff'
-
 
 ; Migration support
 projects[migrate_ding1_ding2][type] = "module"
