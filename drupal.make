@@ -44,7 +44,7 @@ projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/1.diff'
 projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/2.diff'
 
 ; Place 2 book
-projects[ding_place2book][type] = "theme"
+projects[ding_place2book][type] = "module"
 projects[ding_place2book][download][type] = "git"
 projects[ding_place2book][download][url] = "git@github.com:ding2/ding_place2book.git"
 projects[ding_place2book][download][branch] = "master"
