@@ -65,6 +65,8 @@ projects[ding_base][download][url] = "git@github.com:ding2/ding_base.git"
 projects[ding_base][download][branch] = "master"
 ; Added global redirect.
 projects[ding_base][patch][] = 'https://github.com/ding2/ding_base/pull/8.diff'
+; Fix cgen.
+projects[ding_base][patch][] = 'https://github.com/ding2/ding_base/pull/9.diff'
 
 ; Permissions
 projects[ding_permissions][type] = "module"
