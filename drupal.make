@@ -25,7 +25,7 @@ projects[ding2][patch][] = 'https://github.com/ding2/ding2/pull/13.diff'
 projects[ding_wayf_dk][type] = "module"
 projects[ding_wayf_dk][download][type] = "git"
 projects[ding_wayf_dk][download][url] = "git@github.com:aakbcms/ding_wayf_dk.git"
-projects[ding_wayf_dk][download][revision] = "97257b1e0b2dfb90f59deecf4803961d65f3712c"
+projects[ding_wayf_dk][download][branch] = "master"
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
@@ -106,11 +106,11 @@ projects[ting][download][branch] = "master"
 ; PDOException.
 projects[ting][patch][] = 'https://github.com/ding2/ting/pull/13.diff'
 
-; Bookmarks
-projects[ding_bookmark][type] = "module"
-projects[ding_bookmark][download][type] = "git"
-projects[ding_bookmark][download][url] = "git@github.com:ding2/ding_bookmark.git"
-projects[ding_bookmark][download][branch] = "master"
+; Redia RSS feeds
+projects[ding_redia_rss][type] = "module"
+projects[ding_redia_rss][download][type] = "git"
+projects[ding_redia_rss][download][url] = "git@github.com:reload/ding_redia_rss.git"
+projects[ding_redia_rss][download][branch] = "develop"
 
 ; Migration support
 projects[migrate_ding1_ding2][type] = "module"
