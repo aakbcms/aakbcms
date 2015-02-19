@@ -106,6 +106,14 @@ projects[ting][download][branch] = "master"
 ; PDOException.
 projects[ting][patch][] = 'https://github.com/ding2/ting/pull/13.diff'
 
+; Ting reference
+projects[ting_reference][type] = "module"
+projects[ting_reference][download][type] = "git"
+projects[ting_reference][download][url] = "git@github.com:ding2/ting_reference.git"
+projects[ting_reference][download][branch] = "master"
+; Update relation module in makefile.
+projects[ting_reference][patch][] = 'https://github.com/ding2/ting_reference/pull/6.diff'
+
 ; Redia RSS feeds
 projects[ding_redia_rss][type] = "module"
 projects[ding_redia_rss][download][type] = "git"
