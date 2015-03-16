@@ -13,6 +13,12 @@ projects[drupal][patch][] = http://drupal.org/files/ssl-socket-transports-187997
 projects[drupal][patch][] = http://drupal.org/files/issues/autocomplete-1232416-17-7x.patch
 projects[drupal][patch][] = http://drupal.org/files/issues/translate_role_names-2205581-1.patch
 
+; Get the profile, which will contain the next makefile.
+projects[ding2][type] = "profile"
+projects[ding2][download][type] = "git"
+projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
+projects[ding2][download][branch] = "master"
+
 ; WAYF extesions.
 projects[ding_wayf_dk][type] = "module"
 projects[ding_wayf_dk][download][type] = "git"
