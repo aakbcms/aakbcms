@@ -54,6 +54,24 @@ projects[ding_redia_rss][download][type] = "git"
 projects[ding_redia_rss][download][url] = "git@github.com:reload/ding_redia_rss.git"
 projects[ding_redia_rss][download][branch] = "develop"
 
+; Web-trends
+projects[ding_webtrends][type] = "module"
+projects[ding_webtrends][download][type] = "git"
+projects[ding_webtrends][download][url] = "git@github.com:ding2/ding_webtrends.git"
+projects[ding_webtrends][download][branch] = "master"
+; Remove un-used plugins.
+projects[ding_webtrends][patch][] = 'https://github.com/aakbcms/ding_webtrends/commit/23b964e6ba852bdbd0d686cb014e93ea7e519346.patch'
+
+; Permissions
+projects[ding_permissions][type] = "module"
+projects[ding_permissions][download][type] = "git"
+projects[ding_permissions][download][url] = "git@github.com:ding2/ding_permissions.git"
+projects[ding_permissions][download][branch] = "master"
+; Added adv-user.
+projects[ding_permissions][patch][] = 'https://github.com/aakbcms/ding_permissions/commit/84efdae6fbe76debf7d8d87e6be9ec6e3e084123.patch'
+; Added adv-user.
+projects[ding_permissions][patch][] = 'https://github.com/aakbcms/ding_permissions/commit/6336de985181e05de3684e294b75a906a23b1d30.patch'
+
 ; Migration support
 projects[migrate_ding1_ding2][type] = "module"
 projects[migrate_ding1_ding2][download][type] = "git"
