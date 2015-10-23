@@ -73,6 +73,8 @@ projects[ding_permissions][type] = "module"
 projects[ding_permissions][download][type] = "git"
 projects[ding_permissions][download][url] = "git@github.com:ding2/ding_permissions.git"
 projects[ding_permissions][download][tag] = "7.x-2.3.1"
+; Add override node options #460
+projects[ding_permissions][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding_permissions/pull/18.patch'
 ; Added adv-user.
 ;projects[ding_permissions][patch][] = 'https://github.com/aakbcms/ding_permissions/commit/84efdae6fbe76debf7d8d87e6be9ec6e3e084123.patch'
 ; Added adv-user.
