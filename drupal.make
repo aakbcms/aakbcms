@@ -31,6 +31,8 @@ projects[alma][download][url] = "git@github.com:ding2/alma.git"
 projects[alma][download][tag] = "7.x-2.3.1"
 ; WAYF support.
 projects[alma][patch][] = 'https://github.com/ding2/alma/pull/12.diff'
+; Fix system block code AAKBET-98
+projects[alma][patch][] = 'https://github.com/aakbcms/alma/commit/38a7f0f08bb65620ac4d2841a04a981e1c8beff0.diff'
 
 projects[ddbasic][type] = "theme"
 projects[ddbasic][download][type] = "git"
