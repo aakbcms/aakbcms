@@ -81,3 +81,8 @@ projects[ding_permissions][patch][] = 'https://patch-diff.githubusercontent.com/
 ;projects[ding_permissions][patch][] = 'https://github.com/aakbcms/ding_permissions/commit/84efdae6fbe76debf7d8d87e6be9ec6e3e084123.patch'
 ; Added adv-user.
 ;projects[ding_permissions][patch][] = 'https://github.com/aakbcms/ding_permissions/commit/6336de985181e05de3684e294b75a906a23b1d30.patch'
+
+projects[aakb_alters][type] = "module"
+projects[aakb_alters][download][type] = "git"
+projects[aakb_alters][download][url] = "git@github.com:ding2/aakb_alters.git"
+projects[aakb_alters][download][tag] = "7.x-2.3.1"
