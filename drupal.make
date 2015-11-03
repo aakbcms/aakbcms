@@ -70,6 +70,11 @@ projects[ding_webtrends][download][tag] = "7.x-2.3.1"
 ; Remove un-used plugins.
 projects[ding_webtrends][patch][] = 'https://github.com/aakbcms/ding_webtrends/commit/23b964e6ba852bdbd0d686cb014e93ea7e519346.patch'
 
+projects[opening_hours][subdir] = "contrib"
+projects[opening_hours][version] = "1.5"
+; Add categroy render support
+projects[opening_hours][patch][] = "https://www.drupal.org/files/issues/opening_hours-view_modes-1054616-1.patch"
+
 ; Permissions
 projects[ding_permissions][type] = "module"
 projects[ding_permissions][download][type] = "git"
@@ -84,5 +89,5 @@ projects[ding_permissions][patch][] = 'https://patch-diff.githubusercontent.com/
 
 projects[aakb_alters][type] = "module"
 projects[aakb_alters][download][type] = "git"
-projects[aakb_alters][download][url] = "git@github.com:ding2/aakb_alters.git"
+projects[aakb_alters][download][url] = "git@github.com:aakbcms/aakb_alters.git"
 projects[aakb_alters][download][tag] = "7.x-2.3.1"
