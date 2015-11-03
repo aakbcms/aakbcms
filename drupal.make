@@ -23,7 +23,7 @@ projects[ding2][download][tag] = "7.x-2.3.1"
 projects[ding_wayf_dk][type] = "module"
 projects[ding_wayf_dk][download][type] = "git"
 projects[ding_wayf_dk][download][url] = "git@github.com:aakbcms/ding_wayf_dk.git"
-projects[ding_wayf_dk][download][branch] = "master"
+projects[ding_wayf_dk][download][tag] = "7.x-2.3.1"
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
@@ -38,10 +38,12 @@ projects[ddbasic][type] = "theme"
 projects[ddbasic][download][type] = "git"
 projects[ddbasic][download][url] = "git@github.com:ding2/ddbasic.git"
 projects[ddbasic][download][tag] = "7.x-2.3.1"
-; WAYF support.
-projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/1.diff'
-; Place2book fix.
-projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/2.diff'
+; WAYF support (include in 231.diff).
+;projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/1.diff'
+; Place2book fix (include in 231.diff).
+;projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/2.diff'
+; Opening hours fixes
+projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/compare/7.x-2.3.1...aakbcms:merge/231.diff'
 
 projects[ding_frontend][type] = "module"
 projects[ding_frontend][download][type] = "git"
@@ -73,7 +75,14 @@ projects[ding_webtrends][patch][] = 'https://github.com/aakbcms/ding_webtrends/c
 projects[opening_hours][subdir] = "contrib"
 projects[opening_hours][version] = "1.5"
 ; Add categroy render support
-projects[opening_hours][patch][] = "https://www.drupal.org/files/issues/opening_hours-view_modes-1054616-1.patch"
+projects[opening_hours][patch][] = "https://www.drupal.org/files/issues/opening_hours-view_modes-2607314-2.patch"
+
+projects[ding_library][type] = "module"
+projects[ding_library][download][type] = "git"
+projects[ding_library][download][url] = "git@github.com:ding2/ding_library.git"
+projects[ding_library][download][tag] = "7.x-2.3.1"
+; Opening hours.
+projects[ding_library][patch][] = 'https://github.com/ding2/ding_library/compare/master...aakbcms:feature/opening_hours_config.diff'
 
 ; Permissions
 projects[ding_permissions][type] = "module"
