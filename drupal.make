@@ -75,7 +75,7 @@ projects[ding_webtrends][patch][] = 'https://github.com/aakbcms/ding_webtrends/c
 projects[opening_hours][subdir] = "contrib"
 projects[opening_hours][version] = "1.5"
 ; Add categroy render support
-projects[opening_hours][patch][] = "https://www.drupal.org/files/issues/opening_hours-view_modes-2607314-2.patch"
+projects[opening_hours][patch][] = "https://www.drupal.org/files/issues/opening_hours-view_modes-2607314-3.patch"
 
 projects[ding_library][type] = "module"
 projects[ding_library][download][type] = "git"
