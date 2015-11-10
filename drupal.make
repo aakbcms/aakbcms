@@ -62,7 +62,7 @@ projects[ting_ezproxy][download][revision] = "fb7ab9ba7bb627cfbcc8a3de300063a3fd
 projects[ding_redia_rss][type] = "module"
 projects[ding_redia_rss][download][type] = "git"
 projects[ding_redia_rss][download][url] = "git@github.com:aakbcms/ding_redia_rss.git"
-projects[ding_redia_rss][download][branch] = "feature/update"
+projects[ding_redia_rss][download][branch] = "feature/aakb-patched"
 
 ; Web-trends
 projects[ding_webtrends][type] = "module"
