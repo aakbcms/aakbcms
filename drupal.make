@@ -100,3 +100,6 @@ projects[aakb_alters][type] = "module"
 projects[aakb_alters][download][type] = "git"
 projects[aakb_alters][download][url] = "git@github.com:aakbcms/aakb_alters.git"
 projects[aakb_alters][download][tag] = "7.x-2.3.1"
+
+projects[imagemagick][subdir] = "contrib"
+projects[imagemagick][version] = "1.0"
