@@ -17,40 +17,42 @@ projects[drupal][patch][] = http://drupal.org/files/issues/translate_role_names-
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-2.3.1"
+projects[ding2][download][tag] = "7.x-2.4.0"
+
+; WAYF support in alma.
+projects[ding2][patch][] = "https://github.com/ding2/ding2/compare/master...aakbcms:feature/alma-wayf.diff"
+; Fix system block code AAKBET-98 in alma
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/alma-blockcode.diff'
+
+; WAYF support (keept to not forget them).
+;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-wayf.diff'
+; Place2book fix (keept to not forget them).
+;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-place2book.diff'
+; Opening hours fixes (keept to not forget them).
+;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-opening-hours.diff'
+; The patches above with re-compiled css and minified JS.
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-combined.diff'
+
+; Add WAYF support in ding_frontend.
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_frontend-wayf.diff'
+
+; Remove un-used webtrends plugins.
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_webtrends-unused-plugin.diff'
+
+; Opening hours in ding_library.
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_library-opening-hours.diff'
+
+; Override node options permissions.
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-override-node.diff'
+
+; Adv. user permissions.
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-adv-user.diff'
 
 ; WAYF extesions.
 projects[ding_wayf_dk][type] = "module"
 projects[ding_wayf_dk][download][type] = "git"
 projects[ding_wayf_dk][download][url] = "git@github.com:aakbcms/ding_wayf_dk.git"
 projects[ding_wayf_dk][download][tag] = "7.x-2.3.1"
-
-projects[alma][type] = "module"
-projects[alma][download][type] = "git"
-projects[alma][download][url] = "git@github.com:ding2/alma.git"
-projects[alma][download][tag] = "7.x-2.3.1"
-; WAYF support.
-projects[alma][patch][] = 'https://github.com/ding2/alma/pull/12.diff'
-; Fix system block code AAKBET-98
-projects[alma][patch][] = 'https://github.com/aakbcms/alma/commit/38a7f0f08bb65620ac4d2841a04a981e1c8beff0.diff'
-
-projects[ddbasic][type] = "theme"
-projects[ddbasic][download][type] = "git"
-projects[ddbasic][download][url] = "git@github.com:ding2/ddbasic.git"
-projects[ddbasic][download][tag] = "7.x-2.3.1"
-; WAYF support (include in 231.diff).
-;projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/1.diff'
-; Place2book fix (include in 231.diff).
-;projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/pull/2.diff'
-; Opening hours fixes
-projects[ddbasic][patch][] = 'https://github.com/ding2/ddbasic/compare/7.x-2.3.1...aakbcms:merge/231.diff'
-
-projects[ding_frontend][type] = "module"
-projects[ding_frontend][download][type] = "git"
-projects[ding_frontend][download][url] = "git@github.com:ding2/ding_frontend.git"
-projects[ding_frontend][download][tag] = "7.x-2.3.1"
-; WAYF support.
-projects[ding_frontend][patch][] = 'https://github.com/ding2/ding_frontend/pull/14.patch'
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
@@ -64,37 +66,10 @@ projects[ding_redia_rss][download][type] = "git"
 projects[ding_redia_rss][download][url] = "git@github.com:aakbcms/ding_redia_rss.git"
 projects[ding_redia_rss][download][branch] = "feature/aakb-patched"
 
-; Web-trends
-projects[ding_webtrends][type] = "module"
-projects[ding_webtrends][download][type] = "git"
-projects[ding_webtrends][download][url] = "git@github.com:ding2/ding_webtrends.git"
-projects[ding_webtrends][download][tag] = "7.x-2.3.1"
-; Remove un-used plugins.
-projects[ding_webtrends][patch][] = 'https://github.com/aakbcms/ding_webtrends/commit/23b964e6ba852bdbd0d686cb014e93ea7e519346.patch'
-
 projects[opening_hours][subdir] = "contrib"
 projects[opening_hours][version] = "1.5"
 ; Add categroy render support
 projects[opening_hours][patch][] = "https://www.drupal.org/files/issues/opening_hours-view_modes-2607314-3.patch"
-
-projects[ding_library][type] = "module"
-projects[ding_library][download][type] = "git"
-projects[ding_library][download][url] = "git@github.com:ding2/ding_library.git"
-projects[ding_library][download][tag] = "7.x-2.3.1"
-; Opening hours.
-projects[ding_library][patch][] = 'https://github.com/ding2/ding_library/compare/master...aakbcms:feature/opening_hours_config.diff'
-
-; Permissions
-projects[ding_permissions][type] = "module"
-projects[ding_permissions][download][type] = "git"
-projects[ding_permissions][download][url] = "git@github.com:ding2/ding_permissions.git"
-projects[ding_permissions][download][tag] = "7.x-2.3.1"
-; Add override node options #460
-projects[ding_permissions][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding_permissions/pull/18.patch'
-; Added adv-user.
-;projects[ding_permissions][patch][] = 'https://github.com/aakbcms/ding_permissions/commit/84efdae6fbe76debf7d8d87e6be9ec6e3e084123.patch'
-; Added adv-user.
-;projects[ding_permissions][patch][] = 'https://github.com/aakbcms/ding_permissions/commit/6336de985181e05de3684e294b75a906a23b1d30.patch'
 
 projects[aakb_alters][type] = "module"
 projects[aakb_alters][download][type] = "git"
@@ -103,3 +78,9 @@ projects[aakb_alters][download][tag] = "7.x-2.3.1"
 
 projects[imagemagick][subdir] = "contrib"
 projects[imagemagick][version] = "1.0"
+
+projects[override_node_options][subdir] = "contrib"
+projects[override_node_options][version] = "1.13"
+
+projects[advuser][subdir] = "contrib"
+projects[advuser][version] = "3.0-beta1"
