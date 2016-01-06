@@ -52,7 +52,7 @@ projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakb
 projects[ding_wayf_dk][type] = "module"
 projects[ding_wayf_dk][download][type] = "git"
 projects[ding_wayf_dk][download][url] = "git@github.com:aakbcms/ding_wayf_dk.git"
-projects[ding_wayf_dk][download][tag] = "7.x-2.3.1"
+projects[ding_wayf_dk][download][tag] = "7.x-2.4.0"
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
