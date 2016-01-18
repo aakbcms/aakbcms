@@ -48,6 +48,9 @@ projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakb
 ; Adv. user permissions.
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-adv-user.diff'
 
+; Aakb survery permissions
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-aakb-survey.diff'
+
 ; WAYF extesions.
 projects[ding_wayf_dk][type] = "module"
 projects[ding_wayf_dk][download][type] = "git"
@@ -75,6 +78,11 @@ projects[aakb_alters][type] = "module"
 projects[aakb_alters][download][type] = "git"
 projects[aakb_alters][download][url] = "git@github.com:aakbcms/aakb_alters.git"
 projects[aakb_alters][download][tag] = "7.x-2.3.1"
+
+projects[aakb_survey][type] = "module"
+projects[aakb_survey][download][type] = "git"
+projects[aakb_survey][download][url] = "git@github.com:aakbcms/aakb_survey.git"
+projects[aakb_survey][download][branch] = "develop"
 
 projects[imagemagick][subdir] = "contrib"
 projects[imagemagick][version] = "1.0"
