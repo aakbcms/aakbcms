@@ -51,6 +51,9 @@ projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakb
 ; Aakb survery permissions
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-aakb-survey.diff'
 
+; Aakb survery profile panel
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_user_frontend-aakb_survey.diff'
+
 ; WAYF extesions.
 projects[ding_wayf_dk][type] = "module"
 projects[ding_wayf_dk][download][type] = "git"
