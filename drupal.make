@@ -54,6 +54,9 @@ projects[ding2][download][tag] = "7.x-2.5.0-rc1"
 ; Aakb survery profile panel
 ;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.0-rc1...aakbcms:feature/ding_user_frontend-aakb_survey.diff'
 
+; Ding user provider access patches.
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.0-rc1...aakbcms:feature/ding_user_access.diff'
+
 ; PATCH COMBINED FIX FOR 2.5.0
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.0-rc1...aakbcms:combined.diff'
 
