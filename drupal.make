@@ -85,7 +85,7 @@ projects[ding_redia_rss][download][branch] = "feature/aakb-patched"
 projects[opening_hours][subdir] = "contrib"
 projects[opening_hours][version] = "1.5"
 ; Add categroy render support
-projects[opening_hours][patch][] = "https://www.drupal.org/files/issues/opening_hours-view_modes-1054616-5.patch"
+projects[opening_hours][patch][] = "https://www.drupal.org/files/issues/opening_hours-view_modes-2607314-6.patch"
 
 projects[aakb_alters][type] = "module"
 projects[aakb_alters][download][type] = "git"
