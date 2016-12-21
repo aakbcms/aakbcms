@@ -63,6 +63,12 @@ projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
 ; --------------------------------
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:combined-3x.diff'
 
+; WAYF extesions (On it's way out).
+projects[ding_wayf_dk][type] = "module"
+projects[ding_wayf_dk][download][type] = "git"
+projects[ding_wayf_dk][download][url] = "git@github.com:aakbcms/ding_wayf_dk.git"
+projects[ding_wayf_dk][download][tag] = "7.x-2.5.1"
+
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
 projects[ting_ezproxy][download][type] = "git"
