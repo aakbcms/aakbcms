@@ -17,7 +17,7 @@ projects[drupal][patch][] = http://drupal.org/files/issues/translate_role_names-
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][tag] = "master"
+;;projects[ding2][download][tag] = "master"
 
 ; -------------------
 ; -- Theme changes --
@@ -26,9 +26,6 @@ projects[ding2][download][tag] = "master"
 ;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-place2book.diff'
 ; Opening hours fixes (keept to not forget them).
 ;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-opening-hours.diff'
-
-; The patches above with re-compiled css and minified JS.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-combined.diff'
 
 ; -------------------------
 ; -- Permissions changes --
@@ -39,8 +36,6 @@ projects[ding2][download][tag] = "master"
 ;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-adv-user.diff'
 ; Aakb survery permissions
 ;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-aakb-survey.diff'
-; The patches above combined.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-combined.diff'
 
 ; -------------------
 ; -- Other changes --
