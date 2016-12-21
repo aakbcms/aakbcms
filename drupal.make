@@ -17,58 +17,56 @@ projects[drupal][patch][] = http://drupal.org/files/issues/translate_role_names-
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-2.5.1"
+projects[ding2][download][tag] = "master"
 
-; WAYF support in alma.
-;;projects[ding2][patch][] = "https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/alma-wayf.diff"
-; Fix system block code AAKBET-98 in alma
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/alma-blockcode.diff'
-
-; WAYF support (keept to not forget them).
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ddbasic-wayf.diff'
+; -------------------
+; -- Theme changes --
+; -------------------
 ; Place2book fix (keept to not forget them).
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ddbasic-place2book.diff'
+;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-place2book.diff'
 ; Opening hours fixes (keept to not forget them).
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ddbasic-opening-hours.diff'
+;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-opening-hours.diff'
+
 ; The patches above with re-compiled css and minified JS.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ddbasic-combined.diff'
+;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-combined.diff'
 
-; Add WAYF support in ding_frontend.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_frontend-wayf.diff'
+; -------------------------
+; -- Permissions changes --
+; -------------------------
+; Override node options permissions.
+;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-override-node.diff'
+; Adv. user permissions.
+;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-adv-user.diff'
+; Aakb survery permissions
+;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-aakb-survey.diff'
+; The patches above combined.
+;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-combined.diff'
 
+; -------------------
+; -- Other changes --
+; -------------------
 ; Remove un-used webtrends plugins.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_webtrends-unused-plugin.diff'
+;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_webtrends-unused-plugin.diff'
 
 ; Opening hours in ding_library.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_library-opening-hours.diff'
-
-; Override node options permissions.
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_perm-override-node.diff'
-; Adv. user permissions.
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_perm-adv-user.diff'
-; Aakb survery permissions
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_perm-aakb-survey.diff'
-; The patches above combined.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_perm-combined.diff'
+;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_library-opening-hours.diff'
 
 ; Aakb survery profile panel
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_user_frontend-aakb_survey.diff'
-
-; Ding user provider access patches.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_reservation-messages.diff'
+;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_user_frontend-aakb_survey.diff'
 
 ; Patch to display better reservation messages.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:feature/ding_user_access.diff'
+;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_reservation-messages.diff'
 
-; PATCH COMBINED FIX FOR 2.5.0
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-2.5.1...aakbcms:combined.diff'
+; Ding user provider access patches.
+;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_user_access.diff'
 
-
-; WAYF extesions.
-projects[ding_wayf_dk][type] = "module"
-projects[ding_wayf_dk][download][type] = "git"
-projects[ding_wayf_dk][download][url] = "git@github.com:aakbcms/ding_wayf_dk.git"
-projects[ding_wayf_dk][download][tag] = "7.x-2.5.1"
+; --------------------------------
+; -- PATCH COMBINED FIX FOR 3.x --
+; --------------------------------
+; --   All the commented out    --
+: --  patches above combined.   --
+; --------------------------------
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:combined-3x.diff'
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
