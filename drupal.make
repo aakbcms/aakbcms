@@ -17,7 +17,7 @@ projects[drupal][patch][] = http://drupal.org/files/issues/translate_role_names-
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-;;projects[ding2][download][tag] = "master"
+projects[ding2][download][tag] = "7.x-3.0.1"
 
 ; -------------------
 ; -- Theme changes --
