@@ -61,7 +61,7 @@ projects[ding2][download][tag] = "7.x-3.0.1"
 ; --   All the commented out    --
 : --  patches above combined.   --
 ; --------------------------------
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:combined-3x.diff'
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-3.0.1...aakbcms:combined-3x.diff'
 
 ; WAYF extesions (On it's way out).
 projects[ding_wayf_dk][type] = "module"
