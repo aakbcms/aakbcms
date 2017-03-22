@@ -17,7 +17,12 @@ projects[drupal][patch][] = http://drupal.org/files/issues/translate_role_names-
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-3.0.1"
+projects[ding2][download][tag] = "7.x-3.0.2"
+
+libraries[ting-client][download][type] = "git"
+libraries[ting-client][download][url] = "http://github.com/ding2/ting-client.git"
+libraries[ting-client][download][branch] = "7.x-3.0.2"
+libraries[ting-client][destination] = "modules/ting/lib"
 
 ; -------------------
 ; -- Theme changes --
@@ -61,7 +66,19 @@ projects[ding2][download][tag] = "7.x-3.0.1"
 ; --   All the commented out    --
 : --  patches above combined.   --
 ; --------------------------------
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-3.0.1...aakbcms:combined-3x.diff'
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:combined-3x.diff'
+
+; -------------------------------
+; -- PATCH TEMPORARY FOR 3.0.x --
+; -------------------------------
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/552.diff'
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/352.diff'
+libraries[ting-client][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ting-client/pull/21.diff'
+; Local patches.
+projects[ding2][patch][] = 'https://raw.githubusercontent.com/aakbcms/docs/master/ting-client.diff'
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:feature/fbs-hackes-3.x.diff'
+libraries[ting-client][patch][] = 'https://github.com/ding2/ting-client/compare/7.x-3.0.2...aakbcms:feature/holdingitems.diff'
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:feature/ting-holdingitems-3.x.diff'
 
 ; WAYF extesions (On it's way out).
 projects[ding_wayf_dk][type] = "module"
@@ -89,12 +106,12 @@ projects[opening_hours][patch][] = "https://www.drupal.org/files/issues/opening_
 projects[aakb_alters][type] = "module"
 projects[aakb_alters][download][type] = "git"
 projects[aakb_alters][download][url] = "git@github.com:aakbcms/aakb_alters.git"
-projects[aakb_alters][download][tag] = "7.x-2.5.1"
+projects[aakb_alters][download][tag] = "7.x-3.0.2"
 
 projects[aakb_survey][type] = "module"
 projects[aakb_survey][download][type] = "git"
 projects[aakb_survey][download][url] = "git@github.com:aakbcms/aakb_survey.git"
-projects[aakb_survey][download][tag] = "7.x-2.5.1"
+projects[aakb_survey][download][tag] = "7.x-3.0.2"
 
 projects[imagemagick][subdir] = "contrib"
 projects[imagemagick][version] = "1.0"
