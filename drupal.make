@@ -17,20 +17,12 @@ projects[drupal][patch][] = http://drupal.org/files/issues/translate_role_names-
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-3.0.2"
+projects[ding2][download][branch] = "release-4.x"
 
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "http://github.com/ding2/ting-client.git"
-libraries[ting-client][download][branch] = "7.x-3.0.2"
+libraries[ting-client][download][branch] = "master"
 libraries[ting-client][destination] = "modules/ting/lib"
-
-; -------------------
-; -- Theme changes --
-; -------------------
-; Place2book fix (keept to not forget them).
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-place2book.diff'
-; Opening hours fixes (keept to not forget them).
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-opening-hours.diff'
 
 ; -------------------------
 ; -- Permissions changes --
@@ -66,25 +58,16 @@ libraries[ting-client][destination] = "modules/ting/lib"
 ; --   All the commented out    --
 : --  patches above combined.   --
 ; --------------------------------
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:combined-3x.diff'
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/release-4.x...aakbcms:combined-4.x.diff'
 
 ; -------------------------------
 ; -- PATCH TEMPORARY FOR 3.0.x --
 ; -------------------------------
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/552.diff'
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/352.diff'
-libraries[ting-client][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ting-client/pull/21.diff'
 ; Local patches.
-projects[ding2][patch][] = 'https://raw.githubusercontent.com/aakbcms/docs/master/ting-client.diff'
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:feature/fbs-hackes-3.x.diff'
-libraries[ting-client][patch][] = 'https://github.com/ding2/ting-client/compare/7.x-3.0.2...aakbcms:feature/holdingitems.diff'
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:feature/ting-holdingitems-3.x.diff'
-
-; WAYF extesions (On it's way out).
-projects[ding_wayf_dk][type] = "module"
-projects[ding_wayf_dk][download][type] = "git"
-projects[ding_wayf_dk][download][url] = "git@github.com:aakbcms/ding_wayf_dk.git"
-projects[ding_wayf_dk][download][tag] = "7.x-2.5.1"
+;projects[ding2][patch][] = 'https://raw.githubusercontent.com/aakbcms/docs/master/ting-client.diff'
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/fbs-hackes-3.x.diff'
+libraries[ting-client][patch][] = 'https://github.com/ding2/ting-client/compare/master...aakbcms:feature/holdingitems.diff'
+;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ting-holdingitems-3.x.diff'
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
