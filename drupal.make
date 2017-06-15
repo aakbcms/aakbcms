@@ -31,6 +31,8 @@ libraries[ting-client][destination] = "modules/ting/lib"
 ;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-place2book.diff'
 ; Opening hours fixes (keept to not forget them).
 ;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-opening-hours.diff'
+; TinyBox style changes.
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/tinybox.diff'
 
 ; -------------------------
 ; -- Permissions changes --
