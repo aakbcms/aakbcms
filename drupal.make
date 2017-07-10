@@ -2,27 +2,17 @@ core = 7.x
 api = 2
 
 ; Core
-; As d.o is having issues with the update XML file, we are using this form for downloading core.
-; See this: https://drupal.org/node/2126123
 projects[drupal][type] = core
 projects[drupal][version] = 7.54
-projects[drupal][download][type] = get
-projects[drupal][download][url] = http://ftp.drupal.org/files/projects/drupal-7.54.tar.gz
 projects[drupal][patch][] = http://drupal.org/files/issues/menu-get-item-rebuild-1232346-45.patch
 projects[drupal][patch][] = http://drupal.org/files/ssl-socket-transports-1879970-13.patch
-projects[drupal][patch][] = http://www.drupal.org/files/issues/1232416-autocomplete-for-drupal7x53.patch
 projects[drupal][patch][] = http://drupal.org/files/issues/translate_role_names-2205581-1.patch
 
 ; Get the profile, which will contain the next makefile.
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][branch] = "release-4.x"
-
-libraries[ting-client][download][type] = "git"
-libraries[ting-client][download][url] = "http://github.com/ding2/ting-client.git"
-libraries[ting-client][download][branch] = "master"
-libraries[ting-client][destination] = "modules/ting/lib"
+projects[ding2][download][branch] = "7.x-4.0.0-beta1"
 
 ; -------------------------
 ; -- Permissions changes --
@@ -53,7 +43,7 @@ libraries[ting-client][destination] = "modules/ting/lib"
 ;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_user_access.diff'
 
 ; --------------------------------
-; -- PATCH COMBINED FIX FOR 3.x --
+; -- PATCH COMBINED FIX FOR 4.x --
 ; --------------------------------
 ; --   All the commented out    --
 : --  patches above combined.   --
@@ -65,8 +55,8 @@ projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/release-4.x..
 ; -------------------------------
 ; Local patches.
 ;projects[ding2][patch][] = 'https://raw.githubusercontent.com/aakbcms/docs/master/ting-client.diff'
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/fbs-hackes-3.x.diff'
-libraries[ting-client][patch][] = 'https://github.com/ding2/ting-client/compare/master...aakbcms:feature/holdingitems.diff'
+;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/fbs-hackes-3.x.diff'
+;libraries[ting-client][patch][] = 'https://github.com/ding2/ting-client/compare/master...aakbcms:feature/holdingitems.diff'
 ;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ting-holdingitems-3.x.diff'
 
 ; Ezproxy
