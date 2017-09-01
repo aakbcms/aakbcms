@@ -59,6 +59,10 @@ projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/release-4.x..
 ;libraries[ting-client][patch][] = 'https://github.com/ding2/ting-client/compare/master...aakbcms:feature/holdingitems.diff'
 ;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ting-holdingitems-3.x.diff'
 
+
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/place2book_cache.diff'
+
+
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
 projects[ting_ezproxy][download][type] = "git"
@@ -85,6 +89,11 @@ projects[aakb_survey][type] = "module"
 projects[aakb_survey][download][type] = "git"
 projects[aakb_survey][download][url] = "git@github.com:aakbcms/aakb_survey.git"
 projects[aakb_survey][download][tag] = "7.x-3.0.2"
+
+projects[aakb_edb][type] = "module"
+projects[aakb_edb][download][type] = "git"
+projects[aakb_edb][download][url] = "git@github.com:aakbcms/aakb_edb.git"
+projects[aakb_edb][download][branch] = "master"
 
 projects[imagemagick][subdir] = "contrib"
 projects[imagemagick][version] = "1.0"
