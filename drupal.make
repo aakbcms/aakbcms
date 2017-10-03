@@ -3,65 +3,23 @@ api = 2
 
 ; Core
 projects[drupal][type] = core
-projects[drupal][version] = 7.54
-projects[drupal][patch][] = http://drupal.org/files/issues/menu-get-item-rebuild-1232346-45.patch
-projects[drupal][patch][] = http://drupal.org/files/ssl-socket-transports-1879970-13.patch
-projects[drupal][patch][] = http://drupal.org/files/issues/translate_role_names-2205581-1.patch
+projects[drupal][version] = 7.56
+projects[drupal][patch][] = "http://drupal.org/files/issues/menu-get-item-rebuild-1232346-45.patch"
+projects[drupal][patch][] = "http://drupal.org/files/ssl-socket-transports-1879970-13.patch"
+projects[drupal][patch][] = "http://www.drupal.org/files/issues/1232416-autocomplete-for-drupal7x53.patch"
+projects[drupal][patch][] = "http://drupal.org/files/issues/translate_role_names-2205581-1.patch"
 
 ; Get the profile, which will contain the next makefile.
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][branch] = "7.x-4.0.0-beta1"
+projects[ding2][download][branch] = "7.x-4.0.0"
 
-; -------------------------
-; -- Permissions changes --
-; -------------------------
-; Override node options permissions.
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-override-node.diff'
-; Adv. user permissions.
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-adv-user.diff'
-; Aakb survery permissions
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-aakb-survey.diff'
+; PHP 7 changes.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/615.diff'
 
-; -------------------
-; -- Other changes --
-; -------------------
-; Remove un-used webtrends plugins.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_webtrends-unused-plugin.diff'
-
-; Opening hours in ding_library.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_library-opening-hours.diff'
-
-; Aakb survery profile panel
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_user_frontend-aakb_survey.diff'
-
-; Patch to display better reservation messages.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_reservation-messages.diff'
-
-; Ding user provider access patches.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_user_access.diff'
-
-; --------------------------------
-; -- PATCH COMBINED FIX FOR 4.x --
-; --------------------------------
-; --   All the commented out    --
-: --  patches above combined.   --
-; --------------------------------
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/release-4.x...aakbcms:combined-4.x.diff'
-
-; -------------------------------
-; -- PATCH TEMPORARY FOR 3.0.x --
-; -------------------------------
-; Local patches.
-;projects[ding2][patch][] = 'https://raw.githubusercontent.com/aakbcms/docs/master/ting-client.diff'
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/fbs-hackes-3.x.diff'
-;libraries[ting-client][patch][] = 'https://github.com/ding2/ting-client/compare/master...aakbcms:feature/holdingitems.diff'
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ting-holdingitems-3.x.diff'
-
-
+; Cache place2book urls to speed up requests for mobile apps.
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/place2book_cache.diff'
-
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
