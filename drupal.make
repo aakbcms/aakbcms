@@ -20,6 +20,7 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 
 ; Cache place2book urls to speed up requests for mobile apps.
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/place2book_cache.diff'
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/812.diff'
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
@@ -33,10 +34,10 @@ projects[ding_redia_rss][download][type] = "git"
 projects[ding_redia_rss][download][url] = "git@github.com:aakbcms/ding_redia_rss.git"
 projects[ding_redia_rss][download][branch] = "feature/aakb-patched"
 
-projects[opening_hours][subdir] = "contrib"
-projects[opening_hours][version] = "1.6"
-; Add categroy render support
-projects[opening_hours][patch][] = "https://www.drupal.org/files/issues/opening_hours-view_modes-2607314-7.patch"
+projects[ding_redia_variables][type] = "module"
+projects[ding_redia_variables][download][type] = "git"
+projects[ding_redia_variables][download][url] = "https://github.com/easySuite/ding_redia_variables.git"
+projects[ding_redia_variables][download][branch] = "master"
 
 projects[aakb_alters][type] = "module"
 projects[aakb_alters][download][type] = "git"
