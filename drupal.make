@@ -20,7 +20,19 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 
 ; Cache place2book urls to speed up requests for mobile apps.
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/place2book_cache.diff'
+
+; Dibs
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/776.diff'
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/813.diff'
+
+; Search API.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/812.diff'
+
+; Search field (STUD-1)
+projects[ding2][patch][] = 'https://github.com/aakbcms/patches/compare/master...aakbcms:feature/search-profile-filters.diff'
+
+; TinyBox template
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/tinybox.diff'
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
