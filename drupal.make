@@ -34,6 +34,10 @@ projects[ding2][patch][] = 'https://github.com/aakbcms/patches/compare/master...
 ; TinyBox template
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/tinybox.diff'
 
+
+; 8 days re-new limit message
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/8-renewal.diff'
+
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
 projects[ting_ezproxy][download][type] = "git"
