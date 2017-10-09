@@ -38,6 +38,9 @@ projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakb
 ; 8 days re-new limit message
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/8-renewal.diff'
 
+; Filter holding branches.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/819.diff'
+
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
 projects[ting_ezproxy][download][type] = "git"
