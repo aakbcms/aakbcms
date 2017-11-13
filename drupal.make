@@ -13,7 +13,7 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/translate_role_names
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-4.0.1-rc2"
+projects[ding2][download][tag] = "7.x-4.0.1"
 
 ; PHP 7 changes.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/615.diff'
@@ -34,15 +34,11 @@ projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakb
 ; 8 days re-new limit message
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/8-renewal.diff'
 
-; Filter holding branches.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/819.diff'
+; Default opening hours category.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/881.diff'
 
-; Fixed for IPE.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/863.diff'
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/864.diff'
-
-; Carousel fixes
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/852.diff'
+; Sort holdings base on library.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/885.diff'
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"

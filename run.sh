@@ -6,3 +6,4 @@ drush make --concurrency=1 --contrib-destination=profiles/ding2/ --working-copy 
 # Compile sass
 (cd $1/profiles/ding2/themes/ddbasic/ && npm install)
 (cd $1/profiles/ding2/themes/ddbasic/ && node_modules/.bin/gulp uglify sass)
+(cd $1/profiles/ding2/themes/ddbasic/ && rm -rf node_modules)
