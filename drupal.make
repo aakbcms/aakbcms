@@ -13,7 +13,7 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/translate_role_names
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-4.0.1"
+projects[ding2][download][tag] = "7.x-4.0.2"
 
 ; PHP 7 changes.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/615.diff'
