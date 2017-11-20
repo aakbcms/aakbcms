@@ -63,6 +63,12 @@ projects[ding_redia_variables][download][type] = "git"
 projects[ding_redia_variables][download][url] = "https://github.com/easySuite/ding_redia_variables.git"
 projects[ding_redia_variables][download][branch] = "master"
 
+projects[ding_redia_variables][type] = "module"
+projects[ding_redia_variables][download][type] = "git"
+projects[ding_redia_variables][download][url] = "https://github.com/easySuite/easyddb_smartbanner.git"
+projects[ding_redia_variables][download][branch] = "master"
+
+; AAKB modules
 projects[aakb_alters][type] = "module"
 projects[aakb_alters][download][type] = "git"
 projects[aakb_alters][download][url] = "git@github.com:aakbcms/aakb_alters.git"
