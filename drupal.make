@@ -52,6 +52,12 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 ; Fixed embedded video.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/892.diff'
 
+; More link in groups for events.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/896.diff'
+
+; Provide links to materials in debt list.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/701.diff'
+
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
 projects[ting_ezproxy][download][type] = "git"
@@ -69,10 +75,10 @@ projects[ding_redia_variables][download][type] = "git"
 projects[ding_redia_variables][download][url] = "https://github.com/easySuite/ding_redia_variables.git"
 projects[ding_redia_variables][download][branch] = "master"
 
-projects[ding_redia_variables][type] = "module"
-projects[ding_redia_variables][download][type] = "git"
-projects[ding_redia_variables][download][url] = "https://github.com/easySuite/easyddb_smartbanner.git"
-projects[ding_redia_variables][download][branch] = "master"
+projects[easyddb_smartbanner][type] = "module"
+projects[easyddb_smartbanner][download][type] = "git"
+projects[easyddb_smartbanner][download][url] = "https://github.com/easySuite/easyddb_smartbanner.git"
+projects[easyddb_smartbanner][download][branch] = "master"
 
 ; AAKB modules
 projects[aakb_alters][type] = "module"
