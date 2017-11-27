@@ -2,89 +2,67 @@ core = 7.x
 api = 2
 
 ; Core
-; As d.o is having issues with the update XML file, we are using this form for downloading core.
-; See this: https://drupal.org/node/2126123
 projects[drupal][type] = core
-projects[drupal][version] = 7.54
-projects[drupal][download][type] = get
-projects[drupal][download][url] = http://ftp.drupal.org/files/projects/drupal-7.54.tar.gz
-projects[drupal][patch][] = http://drupal.org/files/issues/menu-get-item-rebuild-1232346-45.patch
-projects[drupal][patch][] = http://drupal.org/files/ssl-socket-transports-1879970-13.patch
-projects[drupal][patch][] = http://www.drupal.org/files/issues/1232416-autocomplete-for-drupal7x53.patch
-projects[drupal][patch][] = http://drupal.org/files/issues/translate_role_names-2205581-1.patch
+projects[drupal][version] = 7.56
+projects[drupal][patch][] = "http://drupal.org/files/issues/menu-get-item-rebuild-1232346-45.patch"
+projects[drupal][patch][] = "http://drupal.org/files/ssl-socket-transports-1879970-13.patch"
+projects[drupal][patch][] = "http://www.drupal.org/files/issues/1232416-autocomplete-for-drupal7x53.patch"
+projects[drupal][patch][] = "http://drupal.org/files/issues/translate_role_names-2205581-1.patch"
 
 ; Get the profile, which will contain the next makefile.
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-3.0.2"
+projects[ding2][download][tag] = "7.x-4.0.2"
 
-libraries[ting-client][download][type] = "git"
-libraries[ting-client][download][url] = "http://github.com/ding2/ting-client.git"
-libraries[ting-client][download][branch] = "7.x-3.0.2"
-libraries[ting-client][destination] = "modules/ting/lib"
+; PHP 7 changes.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/615.diff'
 
-; -------------------
-; -- Theme changes --
-; -------------------
-; Place2book fix (keept to not forget them).
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-place2book.diff'
-; Opening hours fixes (keept to not forget them).
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ddbasic-opening-hours.diff'
+; Cache place2book urls to speed up requests for mobile apps.
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/place2book_cache.diff'
 
-; -------------------------
-; -- Permissions changes --
-; -------------------------
-; Override node options permissions.
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-override-node.diff'
-; Adv. user permissions.
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-adv-user.diff'
-; Aakb survery permissions
-;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_perm-aakb-survey.diff'
+; Dibs
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/776.diff'
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/813.diff'
 
-; -------------------
-; -- Other changes --
-; -------------------
-; Remove un-used webtrends plugins.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_webtrends-unused-plugin.diff'
+; Search field (STUD-1)
+projects[ding2][patch][] = 'https://github.com/aakbcms/patches/compare/master...aakbcms:feature/search-profile-filters.diff'
 
-; Opening hours in ding_library.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_library-opening-hours.diff'
+; TinyBox template
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/tinybox.diff'
 
-; Aakb survery profile panel
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_user_frontend-aakb_survey.diff'
+; 8 days re-new limit message
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/8-renewal.diff'
 
-; Patch to display better reservation messages.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_reservation-messages.diff'
+; Default opening hours category.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/881.diff'
 
-; Ding user provider access patches.
-;;projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ding_user_access.diff'
+; Sort holdings base on library.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/885.diff'
 
-; --------------------------------
-; -- PATCH COMBINED FIX FOR 3.x --
-; --------------------------------
-; --   All the commented out    --
-: --  patches above combined.   --
-; --------------------------------
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:combined-3x.diff'
+; FBS cache.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/889.diff'
 
-; -------------------------------
-; -- PATCH TEMPORARY FOR 3.0.x --
-; -------------------------------
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/552.diff'
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/352.diff'
-libraries[ting-client][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ting-client/pull/21.diff'
-; Local patches.
-projects[ding2][patch][] = 'https://raw.githubusercontent.com/aakbcms/docs/master/ting-client.diff'
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:feature/fbs-hackes-3.x.diff'
-libraries[ting-client][patch][] = 'https://github.com/ding2/ting-client/compare/7.x-3.0.2...aakbcms:feature/holdingitems.diff'
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-3.0.2...aakbcms:feature/ting-holdingitems-3.x.diff'
+; User menu - mobile menu lazy load.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/890.diff'
 
-; WAYF extesions (On it's way out).
-projects[ding_wayf_dk][type] = "module"
-projects[ding_wayf_dk][download][type] = "git"
-projects[ding_wayf_dk][download][url] = "git@github.com:aakbcms/ding_wayf_dk.git"
-projects[ding_wayf_dk][download][tag] = "7.x-2.5.1"
+; Style mobile units - renew loan buttons.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/887.diff'
+
+; Fixed embedded video.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/892.diff'
+
+; More link in groups for events.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/896.diff'
+
+; Group events by date.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/898.diff'
+
+; Remove library selection under staff.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/899.diff'
+
+; Mobile "see more" buttons.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/900.diff'
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
@@ -98,11 +76,17 @@ projects[ding_redia_rss][download][type] = "git"
 projects[ding_redia_rss][download][url] = "git@github.com:aakbcms/ding_redia_rss.git"
 projects[ding_redia_rss][download][branch] = "feature/aakb-patched"
 
-projects[opening_hours][subdir] = "contrib"
-projects[opening_hours][version] = "1.5"
-; Add categroy render support
-projects[opening_hours][patch][] = "https://www.drupal.org/files/issues/opening_hours-view_modes-2607314-6.patch"
+projects[ding_redia_variables][type] = "module"
+projects[ding_redia_variables][download][type] = "git"
+projects[ding_redia_variables][download][url] = "https://github.com/easySuite/ding_redia_variables.git"
+projects[ding_redia_variables][download][branch] = "master"
 
+projects[easyddb_smartbanner][type] = "module"
+projects[easyddb_smartbanner][download][type] = "git"
+projects[easyddb_smartbanner][download][url] = "https://github.com/easySuite/easyddb_smartbanner.git"
+projects[easyddb_smartbanner][download][branch] = "master"
+
+; AAKB modules
 projects[aakb_alters][type] = "module"
 projects[aakb_alters][download][type] = "git"
 projects[aakb_alters][download][url] = "git@github.com:aakbcms/aakb_alters.git"
@@ -112,6 +96,11 @@ projects[aakb_survey][type] = "module"
 projects[aakb_survey][download][type] = "git"
 projects[aakb_survey][download][url] = "git@github.com:aakbcms/aakb_survey.git"
 projects[aakb_survey][download][tag] = "7.x-3.0.2"
+
+projects[aakb_edb][type] = "module"
+projects[aakb_edb][download][type] = "git"
+projects[aakb_edb][download][url] = "git@github.com:aakbcms/aakb_edb.git"
+projects[aakb_edb][download][branch] = "master"
 
 projects[imagemagick][subdir] = "contrib"
 projects[imagemagick][version] = "1.0"
