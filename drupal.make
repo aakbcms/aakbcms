@@ -58,6 +58,12 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 ; Group events by date.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/898.diff'
 
+; Remove library selection under staff.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/899.diff'
+
+; Mobile "see more" buttons.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/900.diff'
+
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
 projects[ting_ezproxy][download][type] = "git"
