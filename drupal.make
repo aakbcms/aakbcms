@@ -41,7 +41,7 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/885.diff'
 
 ; FBS cache.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/889.diff'
+projects[ding2][patch][] = 'https://github.com/aakbcms/patches/compare/master...aakbcms:feature/3073-fbs-session-cache-old.diff'
 
 ; User menu - mobile menu lazy load.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/890.diff'
