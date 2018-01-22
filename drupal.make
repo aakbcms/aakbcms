@@ -118,3 +118,6 @@ projects[override_node_options][version] = "1.13"
 
 projects[advuser][subdir] = "contrib"
 projects[advuser][version] = "3.0-beta1"
+
+projects[varnish][subdir] = "contrib"
+projects[varnish][version] = "1.8"
