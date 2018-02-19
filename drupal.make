@@ -64,6 +64,9 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 ; Mobile "see more" buttons.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/900.diff'
 
+; Place2book waiting list.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1009.diff'
+
 ; Oembed extra patch.
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "1.0-rc2"
