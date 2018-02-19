@@ -13,17 +13,11 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/translate_role_names
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-4.0.2"
-
-; PHP 7 changes.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/615.diff'
+projects[ding2][download][tag] = "7.x-4.2.1-rc1"
 
 ; Cache place2book urls to speed up requests for mobile apps.
+; Place2book waiting list.
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/place2book_cache.diff'
-
-; Dibs
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/776.diff'
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/813.diff'
 
 ; Search field (STUD-1)
 projects[ding2][patch][] = 'https://github.com/aakbcms/patches/compare/master...aakbcms:feature/search-profile-filters.diff'
@@ -39,33 +33,6 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 
 ; Sort holdings base on library.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/885.diff'
-
-; FBS cache.
-projects[ding2][patch][] = 'https://github.com/aakbcms/patches/compare/master...aakbcms:feature/3073-fbs-session-cache-old.diff'
-
-; User menu - mobile menu lazy load.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/890.diff'
-
-; Style mobile units - renew loan buttons.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/887.diff'
-
-; Fixed embedded video.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/892.diff'
-
-; More link in groups for events.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/896.diff'
-
-; Group events by date.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/898.diff'
-
-; Remove library selection under staff.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/899.diff'
-
-; Mobile "see more" buttons.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/900.diff'
-
-; Place2book waiting list.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1009.diff'
 
 ; Oembed extra patch.
 projects[oembed][subdir] = "contrib"
