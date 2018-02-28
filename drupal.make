@@ -3,7 +3,7 @@ api = 2
 
 ; Core
 projects[drupal][type] = core
-projects[drupal][version] = 7.56
+projects[drupal][version] = 7.57
 projects[drupal][patch][] = "http://drupal.org/files/issues/menu-get-item-rebuild-1232346-45.patch"
 projects[drupal][patch][] = "http://drupal.org/files/ssl-socket-transports-1879970-13.patch"
 projects[drupal][patch][] = "http://www.drupal.org/files/issues/1232416-autocomplete-for-drupal7x53.patch"
@@ -13,14 +13,14 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/translate_role_names
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-4.2.1-rc1"
+projects[ding2][download][tag] = "7.x-4.2.1"
 
 ; Cache place2book urls to speed up requests for mobile apps.
 ; Place2book waiting list.
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/place2book_cache.diff'
 
 ; Search field (STUD-1)
-projects[ding2][patch][] = 'https://github.com/aakbcms/patches/compare/master...aakbcms:feature/search-profile-filters.diff'
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1019.diff'
 
 ; TinyBox template
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/tinybox.diff'
@@ -33,6 +33,9 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 
 ; Sort holdings base on library.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/885.diff'
+
+; Removed sorting on AcquisitionDate.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1021.diff'
 
 ; Oembed extra patch.
 projects[oembed][subdir] = "contrib"
