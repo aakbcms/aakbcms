@@ -22,7 +22,7 @@ projects[ding2][patch][] = 'https://github.com/aakbcms/patches/compare/master...
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1009.diff'
 
 ; Search field (STUD-1)
-; projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1019.diff'
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1019.diff'
 
 ; TinyBox template
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/tinybox.diff'
