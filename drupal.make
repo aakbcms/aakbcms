@@ -56,17 +56,6 @@ projects[ting_ezproxy][download][type] = "git"
 projects[ting_ezproxy][download][url] = "git@github.com:aakbcms/ting_ezproxy.git"
 projects[ting_ezproxy][download][revision] = "fb7ab9ba7bb627cfbcc8a3de300063a3fd970e8f"
 
-; Redia RSS feeds
-projects[ding_redia_rss][type] = "module"
-projects[ding_redia_rss][download][type] = "git"
-projects[ding_redia_rss][download][url] = "git@github.com:aakbcms/ding_redia_rss.git"
-projects[ding_redia_rss][download][branch] = "feature/aakb-patched"
-
-projects[ding_redia_variables][type] = "module"
-projects[ding_redia_variables][download][type] = "git"
-projects[ding_redia_variables][download][url] = "https://github.com/easySuite/ding_redia_variables.git"
-projects[ding_redia_variables][download][branch] = "master"
-
 projects[easyddb_smartbanner][type] = "module"
 projects[easyddb_smartbanner][download][type] = "git"
 projects[easyddb_smartbanner][download][url] = "https://github.com/easySuite/easyddb_smartbanner.git"
