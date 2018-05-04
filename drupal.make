@@ -42,6 +42,9 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 ; Ajax/lazy load ting reference objects
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1037.diff'
 
+; Patch app feeds with fixes.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1083.diff'
+
 ; Oembed extra patch.
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "1.0-rc2"
