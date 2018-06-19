@@ -13,22 +13,16 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/translate_role_names
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-4.3.0"
-
-; Cache place2book urls to speed up requests for mobile apps.
-projects[ding2][patch][] = 'https://github.com/aakbcms/patches/compare/master...aakbcms:feature/place2book_cache.diff'
-
-; Place2book waiting list.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1009.diff'
+projects[ding2][download][tag] = "7.x-4.3.4"
 
 ; Search field (STUD-1)
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1019.diff'
 
 ; TinyBox template
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/tinybox.diff'
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-4.3.4...aakbcms:feature/tinybox.diff'
 
 ; 8 days re-new limit message
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/8-renewal.diff'
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-4.3.4...aakbcms:feature/8-renewal.diff'
 
 ; Default opening hours category.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/881.diff'
@@ -39,11 +33,40 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 ; Fix fjernlaan - https://platform.dandigbib.org/issues/3113
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1012.diff'
 
-; Ajax/lazy load ting reference objects
-;projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1037.diff'
+; Ajax/lazy load ting reference objects.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1037.diff'
 
-; Patch app feeds with fixes.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1083.diff'
+; New search cache - HANDHOLD IN 4.3.4.
+;;projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1075.diff'
+
+; Gold patches.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1126.diff'
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1127.diff'
+
+
+; Gold button.
+projects[ting_das][type] = "module"
+projects[ting_das][download][type] = "git"
+projects[ting_das][download][url] = "https://github.com/aakbcms/ting_das.git"
+projects[ting_das][download][branch] = "master"
+
+; Pretix - ticket system.
+projects[ding_pretix][type] = "module"
+projects[ding_pretix][download][type] = "git"
+projects[ding_pretix][download][url] = "https://github.com/aakbcms/ding_pretix.git"
+projects[ding_pretix][download][branch] = "develop"
+
+; Sub-search core module.
+projects[ting_subsearch_common][type] = "module"
+projects[ting_subsearch_common][download][type] = "git"
+projects[ting_subsearch_common][download][url] = "https://github.com/aakbcms/ting_subsearch_common.git"
+projects[ting_subsearch_common][download][branch] = "develop"
+
+; Sub-search tranlation.
+projects[ting_subsearch_translate][type] = "module"
+projects[ting_subsearch_translate][download][type] = "git"
+projects[ting_subsearch_translate][download][url] = "https://github.com/aakbcms/ting_subsearch_translate.git"
+projects[ting_subsearch_translate][download][branch] = "develop"
 
 ; Oembed extra patch.
 projects[oembed][subdir] = "contrib"
@@ -73,7 +96,7 @@ projects[aakb_alters][download][tag] = "7.x-3.0.2"
 projects[aakb_survey][type] = "module"
 projects[aakb_survey][download][type] = "git"
 projects[aakb_survey][download][url] = "git@github.com:aakbcms/aakb_survey.git"
-projects[aakb_survey][download][tag] = "7.x-3.0.2"
+projects[aakb_survey][download][branch] = "master"
 
 projects[aakb_edb][type] = "module"
 projects[aakb_edb][download][type] = "git"
