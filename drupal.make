@@ -36,25 +36,30 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 ; Ajax/lazy load ting reference objects.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1037.diff'
 
-; New search cache - HANDHOLD IN 4.3.4.
+; New search cache - HANDHOLD IN 4.4.x.
 ;;projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1075.diff'
 
 ; Gold patches.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1126.diff'
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1127.diff'
 
+; Sub-search patch
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1113.diff'
+
+; Fixed fulltext
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1133.diff'
 
 ; Gold button.
 projects[ting_das][type] = "module"
 projects[ting_das][download][type] = "git"
 projects[ting_das][download][url] = "https://github.com/aakbcms/ting_das.git"
-projects[ting_das][download][branch] = "master"
+projects[ting_das][download][tag] = "1.0.0"
 
 ; Pretix - ticket system.
 projects[ding_pretix][type] = "module"
 projects[ding_pretix][download][type] = "git"
 projects[ding_pretix][download][url] = "https://github.com/aakbcms/ding_pretix.git"
-projects[ding_pretix][download][branch] = "develop"
+projects[ding_pretix][download][branch] = "hotfix/1.0.2"
 
 ; Sub-search core module.
 projects[ting_subsearch_common][type] = "module"
