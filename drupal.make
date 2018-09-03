@@ -13,16 +13,19 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/translate_role_names
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "git@github.com:ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-4.3.4"
+projects[ding2][download][tag] = "7.x-4.4.1-rc1"
+
+; New search cache - HANDHOLD IN 4.4.x.
+#projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1147.diff'
 
 ; Search field (STUD-1)
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1019.diff'
 
 ; TinyBox template
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-4.3.4...aakbcms:feature/tinybox.diff'
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-4.4.1-rc1...aakbcms:feature/tinybox.diff'
 
 ; 8 days re-new limit message
-projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-4.3.4...aakbcms:feature/8-renewal.diff'
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-4.4.1-rc1...aakbcms:feature/8-renewal.diff'
 
 ; Default opening hours category.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/881.diff'
@@ -36,8 +39,11 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 ; Ajax/lazy load ting reference objects.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1037.diff'
 
-; New search cache - HANDHOLD IN 4.4.x.
-;;projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1075.diff'
+#libraries[ting-client][download][type] = 'git'
+#libraries[ting-client][download][url] = 'http://github.com/ding2/ting-client.git'
+#libraries[ting-client][download][branch] = 'master'
+#libraries[ting-client][destination] = 'modules/opensearch/lib'
+#libraries[ting-client][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ting-client/pull/24.diff'
 
 ; Gold patches.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1126.diff'
@@ -59,7 +65,7 @@ projects[ting_das][download][tag] = "1.0.0"
 projects[ding_pretix][type] = "module"
 projects[ding_pretix][download][type] = "git"
 projects[ding_pretix][download][url] = "https://github.com/aakbcms/ding_pretix.git"
-projects[ding_pretix][download][branch] = "hotfix/1.0.2"
+projects[ding_pretix][download][tag] = "1.0.3"
 
 ; Sub-search core module.
 projects[ting_subsearch_common][type] = "module"
@@ -119,3 +125,6 @@ projects[advuser][version] = "3.0-beta1"
 
 projects[varnish][subdir] = "contrib"
 projects[varnish][version] = "1.8"
+
+projects[entitycache][subdir] = "contrib"
+projects[entitycache][version] = "1.5"
