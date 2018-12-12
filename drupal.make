@@ -30,6 +30,9 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 ; Gold button.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1130.diff'
 
+; List rescue.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1224.diff'
+
 ; Pretix - ticket system.
 projects[ding_pretix][type] = "module"
 projects[ding_pretix][download][type] = "git"
