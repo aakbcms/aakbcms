@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  drush:
+    image: itkdev/drush6:latest
+    entrypoint:
+      - drush
+    volumes:
+      - $PWD/drush_cache:/root/.drush
+      - ./:/app
+
+  node:
+    image: node:6
+    volumes:
+      - .:/app:delegated
