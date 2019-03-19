@@ -1,3 +1,5 @@
 drush
 *.patch
 *.diff
+drush_cache
+*.tar.gz
