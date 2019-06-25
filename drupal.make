@@ -3,7 +3,7 @@ api = 2
 
 ; Core
 projects[drupal][type] = core
-projects[drupal][version] = 7.64
+projects[drupal][version] = 7.66
 projects[drupal][patch][] = "http://drupal.org/files/issues/menu-get-item-rebuild-1232346-45.patch"
 projects[drupal][patch][] = "http://www.drupal.org/files/issues/1232416-autocomplete-for-drupal7x53.patch"
 projects[drupal][patch][] = "http://drupal.org/files/issues/translate_role_names-2205581-1.patch"
@@ -13,7 +13,7 @@ projects[drupal][patch][] = "https://www.drupal.org/files/issues/programatically
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "https://github.com/ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-4.6.2-rc2"
+projects[ding2][download][tag] = "7.x-4.7.0"
 
 ; Default opening hours category.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1222.diff'
