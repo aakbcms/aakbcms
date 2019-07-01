@@ -13,10 +13,7 @@ projects[drupal][patch][] = "https://www.drupal.org/files/issues/programatically
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "https://github.com/ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-4.7.0"
-
-; Default opening hours category.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1222.diff'
+projects[ding2][download][tag] = "7.x-4.8.0-rc2"
 
 ; TinyBox template
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-4.4.2...aakbcms:feature/tinybox.diff'
@@ -29,9 +26,6 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 
 ; Gold button.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1130.diff'
-
-; 3936 -> Fix missing titles for ILL on loan/reservation
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1384.diff'
 
 ; Pretix - ticket system.
 projects[ding_pretix][type] = "module"
