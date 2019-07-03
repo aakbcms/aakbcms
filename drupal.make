@@ -27,6 +27,9 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 ; Gold button.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1130.diff'
 
+; Remote id to event taxonomy.
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakb:feature/AAKBET-604-ding_event.diff'
+
 ; Pretix - ticket system.
 projects[ding_pretix][type] = "module"
 projects[ding_pretix][download][type] = "git"
@@ -68,7 +71,7 @@ projects[easyddb_smartbanner][download][branch] = "master"
 projects[aakb_alters][type] = "module"
 projects[aakb_alters][download][type] = "git"
 projects[aakb_alters][download][url] = "https://github.com/aakbcms/aakb_alters.git"
-projects[aakb_alters][download][tag] = "7.x-3.0.2"
+projects[aakb_alters][download][branch] = "master"
 
 projects[aakb_survey][type] = "module"
 projects[aakb_survey][download][type] = "git"
