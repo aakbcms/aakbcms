@@ -13,7 +13,7 @@ projects[drupal][patch][] = "https://www.drupal.org/files/issues/programatically
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "https://github.com/ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-4.8.0-rc2"
+projects[ding2][download][tag] = "7.x-5.0.0-beta2"
 
 ; TinyBox template
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-4.4.2...aakbcms:feature/tinybox.diff'
