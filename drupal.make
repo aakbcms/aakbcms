@@ -34,7 +34,7 @@ projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakb
 projects[ding_pretix][type] = "module"
 projects[ding_pretix][download][type] = "git"
 projects[ding_pretix][download][url] = "https://github.com/aakbcms/ding_pretix.git"
-projects[ding_pretix][download][tag] = "1.0.3"
+projects[ding_pretix][download][tag] = "1.1.0"
 
 ; Sub-search core module.
 projects[ting_subsearch_common][type] = "module"
