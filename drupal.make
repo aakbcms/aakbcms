@@ -83,6 +83,11 @@ projects[aakb_edb][download][type] = "git"
 projects[aakb_edb][download][url] = "https://github.com/aakbcms/aakb_edb.git"
 projects[aakb_edb][download][branch] = "master"
 
+projects[aakbcms_linkchecker][type] = "module"
+projects[aakbcms_linkchecker][download][type] = "git"
+projects[aakbcms_linkchecker][download][url] = "https://github.com/aakbcms/aakbcms_linkchecker.git"
+projects[aakbcms_linkchecker][download][branch] = "master"
+
 projects[imagemagick][subdir] = "contrib"
 projects[imagemagick][version] = "1.0"
 
@@ -97,3 +102,6 @@ projects[varnish][version] = "1.8"
 
 projects[entitycache][subdir] = "contrib"
 projects[entitycache][version] = "1.5"
+
+projects[linkchecker][subdir] = "contrib"
+projects[linkchecker][version] = "1.4"
