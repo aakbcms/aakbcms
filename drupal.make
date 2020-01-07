@@ -30,6 +30,9 @@ projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/d
 ; Remote id to event taxonomy.
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakb:feature/AAKBET-604-ding_event.diff'
 
+; Fix paragraphs entitycache in ting_ref.
+projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ting_ref_entity_cache.diff'
+	
 ; Pretix - ticket system.
 projects[ding_pretix][type] = "module"
 projects[ding_pretix][download][type] = "git"

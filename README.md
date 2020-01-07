@@ -15,3 +15,8 @@ itkdev-docker-compose run node /bin/bash -c "cd /app/$1/profiles/ding2/themes/dd
 
 ## Build packaged
 `tar -zcvf $1.tar.gz $1`
+
+
+## Patch
+`https://github.com/ding2/ding2/pull/1560/files`
+`https://github.com/ding2/ding2/compare/master...aakbcms:feature/ting_ref_entity_cache.diff`
