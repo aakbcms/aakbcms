@@ -32,6 +32,12 @@ projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakb
 
 ; Fix paragraphs entitycache in ting_ref.
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ting_ref_entity_cache.diff'
+
+; Changed tag page sort order.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1590.diff'
+
+; Added UTF8 safe functions to add_ellipsis.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1591.diff'
 	
 ; Pretix - ticket system.
 projects[ding_pretix][type] = "module"
