@@ -13,7 +13,7 @@ projects[drupal][patch][] = "https://www.drupal.org/files/issues/programatically
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "https://github.com/ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-6.1.0-beta7"
+projects[ding2][download][tag] = "7.x-6.1.0"
 
 ; TinyBox template
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-4.4.2...aakbcms:feature/tinybox.diff'
@@ -53,14 +53,6 @@ projects[ting_subsearch_translate][type] = "module"
 projects[ting_subsearch_translate][download][type] = "git"
 projects[ting_subsearch_translate][download][url] = "https://github.com/aakbcms/ting_subsearch_translate.git"
 projects[ting_subsearch_translate][download][branch] = "develop"
-
-; Oembed extra patch.
-projects[oembed][subdir] = "contrib"
-projects[oembed][version] = "1.0-rc2"
-; Remove hook_system_info_alter() to allow installing modules depending on oembed, after oembed is installed.
-projects[oembed][patch][] = "http://www.drupal.org/files/issues/oembed-remove_hook_sytem_info_alter-2502817-1.patch"
-; Fixes php7 error.
-projects[oembed][patch][] = "https://www.drupal.org/files/oembed-2021015-1.patch"
 
 ; Ezproxy
 projects[ting_ezproxy][type] = "module"
