@@ -3,7 +3,7 @@ api = 2
 
 ; Core
 projects[drupal][type] = core
-projects[drupal][version] = 7.72
+projects[drupal][version] = 7.77
 projects[drupal][patch][] = "http://drupal.org/files/issues/menu-get-item-rebuild-1232346-45.patch"
 projects[drupal][patch][] = "http://www.drupal.org/files/issues/1232416-autocomplete-for-drupal7x53.patch"
 projects[drupal][patch][] = "http://drupal.org/files/issues/translate_role_names-2205581-1.patch"
@@ -13,7 +13,7 @@ projects[drupal][patch][] = "https://www.drupal.org/files/issues/programatically
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "https://github.com/ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-6.1.0"
+projects[ding2][download][tag] = "7.x-6.2.0-beta4"
 
 ; TinyBox template
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-4.4.2...aakbcms:feature/tinybox.diff'
@@ -36,6 +36,13 @@ projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakb
 ; Changed tag page sort order.
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1590.diff'
 	
+
+; Config import.
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1733.diff'
+
+; DWAY
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1723.patch'
+
 ; Pretix - ticket system.
 projects[ding_pretix][type] = "module"
 projects[ding_pretix][download][type] = "git"
