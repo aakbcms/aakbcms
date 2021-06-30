@@ -1,11 +1,10 @@
 #!/bin/sh
 
 # Build stack
-itkdev-docker-compose drush make --concurrency=1 --contrib-destination=profiles/ding2/ --working-copy drupal.make $1 
-#itkdev-docker-compose drush make --concurrency=1 --contrib-destination=profiles/ding2/ --working-copy --force-complete drupal.make $1 
+itkdev-docker-compose run drush make --concurrency=1 --no-cache  --allow-override --contrib-destination=profiles/ding2/ --working-copy drupal.make $1 -y
 
 # Build profile
-docker run -v $PWD/$1/profiles/ding2/:/app itkdev/drush6 make --concurrency=1 --contrib-destination=. --no-core project.make .
+itkdev-docker-compose run  drush --root=/app/$1/profiles/ding2 make /app/$1/profiles/ding2/project.make --no-core --contrib-destination=. -y --concurrency=8 /app/$1/profiles/ding2
 
 # Compile sass
 itkdev-docker-compose run node /bin/bash -c "cd /app/$1/profiles/ding2/themes/ddbasic/ && npm install"

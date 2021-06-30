@@ -6,7 +6,7 @@ services:
     entrypoint:
       - drush
     volumes:
-      - $PWD/drush_cache:/root/.drush
+      #- $PWD/drush_cache:/root/.drush
       - ./:/app
 
   node:

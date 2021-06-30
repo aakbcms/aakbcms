@@ -3,7 +3,7 @@ api = 2
 
 ; Core
 projects[drupal][type] = core
-projects[drupal][version] = 7.77
+projects[drupal][version] = 7.81
 projects[drupal][patch][] = "http://drupal.org/files/issues/menu-get-item-rebuild-1232346-45.patch"
 projects[drupal][patch][] = "http://www.drupal.org/files/issues/1232416-autocomplete-for-drupal7x53.patch"
 projects[drupal][patch][] = "http://drupal.org/files/issues/translate_role_names-2205581-1.patch"
@@ -13,19 +13,13 @@ projects[drupal][patch][] = "https://www.drupal.org/files/issues/programatically
 projects[ding2][type] = "profile"
 projects[ding2][download][type] = "git"
 projects[ding2][download][url] = "https://github.com/ding2/ding2.git"
-projects[ding2][download][tag] = "7.x-6.2.1"
+projects[ding2][download][tag] = "7.x-6.3.2"
 
 ; TinyBox template
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-4.4.2...aakbcms:feature/tinybox.diff'
 
 ; 8 days re-new limit message
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/7.x-4.4.2...aakbcms:feature/8-renewal.diff'
-
-; Sort holdings base on library.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/885.diff'
-
-; Gold button.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1130.diff'
 
 ; Remote id to event taxonomy.
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakb:feature/AAKBET-604-ding_event.diff'
@@ -34,14 +28,13 @@ projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakb
 projects[ding2][patch][] = 'https://github.com/ding2/ding2/compare/master...aakbcms:feature/ting_ref_entity_cache.diff'
 
 ; Changed tag page sort order.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1590.diff'
-	
-
-; Config import.
-projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1733.diff'
+;projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1590.diff'
 
 ; DWAY
 projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1723.patch'
+
+; JavaScript
+projects[ding2][patch][] = 'https://patch-diff.githubusercontent.com/raw/ding2/ding2/pull/1791.diff'
 
 ; Pretix - ticket system.
 projects[ding_pretix][type] = "module"
@@ -112,3 +105,12 @@ projects[entitycache][version] = "1.5"
 
 projects[linkchecker][subdir] = "contrib"
 projects[linkchecker][version] = "1.4"
+
+projects[advuser][subdir] = "contrib"
+projects[advuser][version] = "3.0-beta1"
+
+projects[system_status][subdir] = "contrib"
+projects[system_status][version] = "3.3"
+
+projects[tinybox][subdir] = "contrib"
+projects[tinybox][version] = "2.2"
